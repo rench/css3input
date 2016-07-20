@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>css3 input标签 LoWang@2016</title>
+    <meta name="keywords" content="css3,表单,复选框美化" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/cssinput.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <style type="text/css">
+        #main {
+            padding: 20px;
+        }
+        
+        h1 {
+            padding: 5px;
+            border-bottom: 1px dotted #C1CACA;
+            width: 600px;
+            margin: 0 0 5px 0;
+            margin-top:26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="line">
+            <h1>请选择您喜欢活动(多选):</h1>
+            <label class="chk_label">
+            <div class="chk_wrap">
+                <input type="checkbox" id="checkbox_c1" class="chk_input" checked />
+                <i class="chk_icon"></i>
+            </div>旅游
+        </label>
+            <label class="chk_label">
+            <div class="chk_wrap">
+                <input type="checkbox" id="checkbox_c1" class="chk_input" />
+                <i class="chk_icon"></i>
+            </div>运动
+        </label>
+            <label class="chk_label">
+            <div class="chk_wrap">
+                <input type="checkbox" id="checkbox_c1" class="chk_input" />
+                <i class="chk_icon"></i>
+            </div>美食
+        </label>
+        </div>
+        <div class="line">
+            <h1>请选择您喜欢的类型(单选):</h1>
+            <label class="radio_label">
+            <div class="radio_wrap">
+                <input type="radio" id="radio_r1" name="type" class="radio_input" checked />
+                <i class="radio_icon"></i>
+            </div>成熟稳重型
+        </label>
+            <label class="radio_label">
+            <div class="radio_wrap">
+                <input type="radio" id="radio_r2" name="type" class="radio_input" />
+                <i class="radio_icon"></i>
+            </div>高富帅型
+        </label>
+            <label class="radio_label">
+            <div class="radio_wrap">
+                <input type="radio" id="radio_r3" name="type" class="radio_input" />
+                <i class="radio_icon"></i>
+            </div>屌丝男型
+        </label>
+        </div>
+    </div>
+</body>
+
+</html>

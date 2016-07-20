@@ -1,0 +1,95 @@
+.chk_label,.radio_label{
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 15px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 18px;
+}
+.chk_label:hover{
+    color: #009AFF
+}
+.radio_label:hover{
+    color: #FE007F;
+}
+.chk_wrap,.radio_wrap{
+    height: 14px;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+.chk_input,.radio_input{
+    display: none;
+}
+.chk_input + i{
+    cursor: pointer;
+    background-color: #FFF;
+    border: 1px solid #AAB2BD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 6px;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+	margin-right: 8px;
+}
+.chk_input + i:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.chk_input:checked + i{
+    background-color: #009AFF;
+	border: 1px solid #009AFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+	color: #009AFF;
+}
+.chk_input:checked + i:after {
+	content: '\2714';
+	position: absolute;
+	top: 0px;
+	left: -2px;
+	color: #FFF;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	padding: 0px 0 0 0;
+	vertical-align: text-top;
+    transform: scale(0.6);
+}
+
+/**radio**/
+.radio_input + i{
+    cursor: pointer;
+    background-color: #FFF;
+    border: 1px solid #AAB2BD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 6px;
+	border-radius: 8px;
+	display: inline-block;
+	position: relative;
+	margin-right: 8px;
+}
+.radio_input + i:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.radio_input:checked + i{
+    background-color: #FE007F;
+	border: 1px solid #FE007F;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+	color: #FE007F;
+}
+.radio_input:checked + i:after {
+	content: ' ';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    background-color: #FFF;
+	color: #FFF;
+	text-align: center;
+	font-size: 1em;
+	padding: 0px 0 0 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    transform: scale(0.6);
+}
